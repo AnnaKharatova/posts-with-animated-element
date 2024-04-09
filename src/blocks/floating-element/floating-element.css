@@ -1,0 +1,31 @@
+@keyframes moveElement {
+    0% {
+        left: 10%;
+        top: 20%;
+    }
+
+    50% {
+        left: 60%;
+        top: 62%;
+    }
+
+    100% {
+        left: 10%;
+        top: 20%;
+    }
+}
+
+.floating-element {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 45%;
+    height: 20%;
+    background-color: #7075F1;
+    border-radius: 210px;
+    -webkit-transform: translate(-10%, -20%) rotate(30deg);
+    -ms-transform: translate(-10%, -20%) rotate(30deg);
+    transform: translate(-10%, -20%) rotate(30deg);
+    -webkit-animation: moveElement 10s infinite;
+    animation: moveElement 10s infinite;
+}

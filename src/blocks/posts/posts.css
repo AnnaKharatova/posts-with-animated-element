@@ -1,0 +1,9 @@
+.posts {
+    max-width: 1980px;
+    min-width: 400px;
+    padding: 125px 50px;
+    background-color: #D4D4D4;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
