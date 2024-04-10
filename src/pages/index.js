@@ -22,11 +22,6 @@ postsArray.forEach((item, index) => {
 
 const elements = document.querySelectorAll(".posts__item");
 
-document.addEventListener('click', function () {
-    const floating = document.getElementById('floating')
-    floating.classList.add('floating-element__clicked');
-});
-
 elements.forEach(el => {
     el.addEventListener('click', function () {
         el.classList.add('posts__item_clicked');
