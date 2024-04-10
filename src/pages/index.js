@@ -24,7 +24,12 @@ const elements = document.querySelectorAll(".posts__item");
 
 elements.forEach(el => {
     el.addEventListener('click', function () {
-        el.classList.add('posts__item_clicked');
+        if (el.classList.contains('posts__item_clicked')) {
+            el.classList.remove('posts__item_clicked');
+        } else {
+            el.classList.add('posts__item_clicked');
+        }
     });
-})
+});
+
 
